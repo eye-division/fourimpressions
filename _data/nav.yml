@@ -1,8 +1,14 @@
-- title: "Posts"
-  href: "/posts/"
-  
-- title: "Projects"
-  href: "/projects/"
-  
-- title: "About"
-  href: "/about/"
+- title: "Exhibitions"
+  href: "/exhibitions/"
+
+- title: "Clare Bassett"
+  href: "https://www.clarebassett.com"
+
+- title: "Susan Moxley"
+  href: "https://www.susanmoxley.com/"
+
+- title: "Gallery artists"
+  href: "/artists/"
+
+- title: "Contact"
+  href: "/contact/"
