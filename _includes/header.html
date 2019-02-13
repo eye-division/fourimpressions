@@ -4,10 +4,10 @@
     <a href="{{ site.baseurl }}/" class="header--wrapper" title="Return home">
 
       {% if site.logo and site.show_logo %}
-        {% include img.html src=site.logo width=150 class="header--logo" alt=site.title %}
+        {% include img.html src=site.headerlogo class="header--logo" alt=site.title %}
+      {% else %}
+          <h1 class="header--title">{{ site.title }}</h1>
       {% endif %}
-
-      <h1 class="header--title">{{ site.title }}</h1>
 
     </a>
 

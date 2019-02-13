@@ -14,11 +14,12 @@ h6 {
   font-size: modular-scale(1);
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
+  font-weight: normal;
 }
 h1 {
   font-size: modular-scale(2);
   @include grid-media ($small) {
-    font-size: modular-scale(4);
+    font-size: modular-scale(3);
   }
 }
 h2 {
@@ -60,6 +61,10 @@ a {
     //outline: $focus-outline;
     //outline-offset: $focus-outline-offset;
   }
+}
+a[href^="https://"] {
+    background: url('/img/External.svg.png') center right no-repeat;
+    padding-right: 15px;
 }
 
 hr {

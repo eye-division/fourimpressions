@@ -20,7 +20,9 @@ asset_url: "/assets/"
 # the base hostname & protocol for your site
 url: "https://www.fourimpressions.com"
 logo: "/siteicon.png"
-email: "a.ward@eyedivision.com"
+headerlogo: "/img/4impressions-logo.png"
+show_logo: true
+email: "info@fourimpressions.com"
 
 # Build settings
 markdown: kramdown

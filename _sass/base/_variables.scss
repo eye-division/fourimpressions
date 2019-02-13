@@ -1,12 +1,12 @@
 // Google Fonts
-@import url(//fonts.googleapis.com/css?family=Roboto+Condensed|Lato:300,400);
+//@import url(//fonts.googleapis.com/css?family=Roboto+Condensed|Lato:300,400);
 
 // Typography
 // $base-font-family: $font-stack-system;
-$base-font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$base-font-family: "Verdana", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 // OR use ? $font-stack-system;
-$heading-font-family: ('Roboto Condensed', 'Helvetica Neue', 'Helvetica', 'verdana', 'Arial', sans-serif);
-$subheading-font-family: ('Roboto Condensed', 'Helvetica Neue', 'Helvetica', 'verdana', 'Arial', sans-serif);
+$heading-font-family: "Verdana", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$subheading-font-family: "Verdana", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 $site-title-font-family: $heading-font-family;
 $logo-font-family: $heading-font-family;
 
@@ -65,8 +65,8 @@ $aaa-hover: rgb(181, 0, 16);
 $aaa-visited: rgb(128, 65, 128);
 
 // Font Colors
-$base-font-color: $black;
-$action-color: $orange;
+$base-font-color: $medium-gray;
+$action-color: $black;
 $action-hover-color: darken($action-color,5%);
 
 $cta-color: darken($orange,0%);
@@ -110,7 +110,7 @@ $navigation-submenu-padding: 1em;
 $navigation-submenu-width: 15em;
 
 $navigation-background: $white;
-$navigation-color: $dark-gray;
+$navigation-color: $medium-gray;
 $navigation-color-hover: $orange;
 $navigation-active-link-color: $orange;
 
