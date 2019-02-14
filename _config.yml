@@ -1,23 +1,28 @@
-# External gems
-gems:
-  - jekyll-sitemap
-
-exclude:
-  - "/vendor/"
+# External gems - updated to plugins in jekyll v3.6
+plugins:
+ # - jekyll-archives # Sorry, not GitHub pages friendly!
+ # - jekyll-assets
+ # - autoprefixer-rails
+   - jekyll-seo-tag
+   - jekyll-sitemap
 
 # Site settings
-title: Four Impressions
-subtitle: Four Impressions Eye Gallery built on Bourbon and Neat
-name: Four Impressions
-description: Four Impressions art gallery
+title: "Four Impressions"
+subtitle:
+name: "Four Impressions"
+description: "Four Impressions art gallery"
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 baseurl: ""
+asset_url: "/assets/"
+
 # the base hostname & protocol for your site
-url: "http://www.fourimpressions.com"
+url: "https://www.fourimpressions.com"
 logo: "/siteicon.png"
-email: a.ward@eyedivision.com
+headerlogo: "/img/4impressions-logo.png"
+show_logo: true
+email: "info@fourimpressions.com"
 
 # Build settings
 markdown: kramdown
@@ -25,31 +30,74 @@ markdown: kramdown
 # paginate_path: "/page:num/"
 # inter_post_navigation: false
 permalink: pretty
+highlightjs_theme: "monokai-sublime"
 
 # Image CDN
 imagecdn:
-  #staging: "http://ed-dev.imgix.net"
-  #production: "http://ed.imgix.net"
+  staging: "https://ed-fourimpressions-dev.imgix.net"
+  production: "https://ed-fourimpressions.imgix.net"
 
 # Collections
 collections:
-#     projects:
-#         output: true
-#         permalink: /projects/:path/
-
+    gallery:
+        output: true
+        permalink: /gallery/:path/
+        #_hide_content: true
 
 # Defaults Example
 defaults:
-#     -
-#         scope:
-#             path: ""
-#             type: "projects"
-#         values:
-#             layout: "project"
+    -
+        scope:
+            path: ""
+            type: "gallery"
+        values:
+            layout: "gallery"
+
+# https://docs.cloudcannon.com/editing/options/
+_options:
+  _text:            # text =
+    link: true
+    bold: true
+    italic: true
+    removeformat: true
+  _block:           # block = editable blocks within pages
+    link: true
+    bold: true
+    italic: true
+    removeformat: true
+    left: align-left
+    center: center-this-text
+    right: align-right
+    justify: full-width-text
+    undo: true
+    redo: true
+    format: p h2 h3 h4 h5 h6 div
+    numberedlist: true
+    bulletedlist: true
+    blockquote: true
+    image: true
+    styles: /css/editor.scss
+  content:
+    link: true
+    bold: true
+    italic: true
+    removeformat: true
+    left: align-left
+    center: center-this-text
+    right: align-right
+    justify: full-width-text
+    undo: true
+    redo: true
+    format: p h2 h3 h4 h5 h6 div
+    numberedlist: true
+    bulletedlist: true
+    blockquote: true
+    image: true
+    styles: /css/editor.scss
 
 
 # Google analytics
-# ga_tracking_id: "UA-XXXX-1"
+ga_tracking_id: "UA-6013840-15"
 
 # Google Recaptcha for contact form
 # recaptcha_site_key: 6Ld_UCsUAAAAAOff_4JE6Uq5ZfKicBMZefuoaQsD
